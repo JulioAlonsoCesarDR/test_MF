@@ -1,0 +1,14 @@
+services:
+  shell:
+    build: ./mf-shell
+    ports:
+      - "3000:80"
+  characters:
+    build: ./mf-characters
+    ports:
+      - "3001:80"
+  characterdetail:
+    build: ./mf-character-detail
+    ports:
+      - "3002:80"
+
